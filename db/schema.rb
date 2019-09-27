@@ -10,10 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 1) do
+ActiveRecord::Schema.define(version: 3) do
+
+  create_table "companies", force: :cascade do |t|
+    t.string "name"
+    t.string "product"
+    t.float  "stock_rating"
+  end
+
+  create_table "contracts", force: :cascade do |t|
+    t.integer "freelancer_id"
+    t.integer "company_id"
+    t.integer "length"
+  end
 
   create_table "freelancers", force: :cascade do |t|
-    t.string "name"
+    t.string  "name"
+    t.string  "type"
+    t.integer "price_per_hour"
   end
 
 end
