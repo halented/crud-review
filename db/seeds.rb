@@ -7,7 +7,7 @@ require 'faker'
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 16.times do
-    Freelancer.create(name: Faker::Name.name, type: Faker::Relationship.familial, price_per_hour: (rand*90).to_int)
+    Freelancer.create(name: Faker::Name.name, specialty: Faker::Relationship.familial, price_per_hour: (rand*90).to_int)
 end
 
 16.times do

@@ -4,7 +4,7 @@ class CreateFreelancers < ActiveRecord::Migration
         #using a macro, create table, available to use from ActiveRecord Migrations
         create_table(:freelancers) do |t|
             t.string :name
-            t.string :type
+            t.string :specialty
             t.integer :price_per_hour
         end
     end

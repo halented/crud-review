@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 3) do
 
   create_table "freelancers", force: :cascade do |t|
     t.string  "name"
-    t.string  "type"
+    t.string  "specialty"
     t.integer "price_per_hour"
   end
 
