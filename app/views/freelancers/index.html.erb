@@ -1,3 +1,7 @@
+
+<%="Lets get ready to rumble"%>
+<%=' '%>
 <%@freelancers.each do |lancer| %>
-<%= lancer.name%>
+<%= link_to lancer.name, freelancer_path(lancer)%>
+<br>
 <%end%>

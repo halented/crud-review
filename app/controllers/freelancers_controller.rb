@@ -6,4 +6,8 @@ def index
     render :index
 end
 
+def show
+    @freelancer = Freelancer.find(params[:id])
+end
+
 end
